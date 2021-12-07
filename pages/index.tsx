@@ -1,7 +1,12 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
+import { Box } from "@chakra-ui/react";
+import Hero from "../components/Hero";
 const Home: NextPage = () => {
-  return <div className={styles.container}></div>;
+  return (
+    <Box>
+      <Hero />
+    </Box>
+  );
 };
 
 export default Home;
