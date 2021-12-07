@@ -26,11 +26,18 @@ export default function Navigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box>
+    <Box
+      position="fixed"
+      right={0}
+      left={0}
+      as="nav"
+      zIndex={1}
+      w="100%"
+      bgColor={"white"}
+    >
       <Flex
         bg={useColorModeValue("white", "gray.800")}
         color={useColorModeValue("gray.600", "white")}
-        minH={"60px"}
         py={{ base: 2 }}
         borderBottom={1}
         borderStyle={"solid"}
