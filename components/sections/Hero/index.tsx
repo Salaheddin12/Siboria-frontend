@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function SplitScreen() {
   return (
-    <Stack pt={16} direction={{ base: "column", md: "row" }}>
+    <Stack pt={32} direction={{ base: "column", md: "row" }} mb={32}>
       <Flex py={8} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={6} w={"full"} maxW={"lg"}>
           <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
