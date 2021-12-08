@@ -26,18 +26,19 @@ export default function Navigation() {
       right={0}
       left={0}
       as="nav"
-      zIndex={1}
+      zIndex={100}
       w="100%"
       bgColor={"white"}
+      borderBottom={1}
+      borderStyle={"solid"}
+      borderColor={useColorModeValue("gray.200", "gray.900")}
+      boxShadow={"0px -11px 100px -12px rgba(0,0,0,0.1)"}
     >
       <Container maxW="container.lg">
         <Flex
           bg={useColorModeValue("white", "gray.800")}
           color={useColorModeValue("gray.600", "white")}
           py={{ base: 2 }}
-          borderBottom={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.900")}
         >
           <Flex
             flex={{ base: 1 }}
