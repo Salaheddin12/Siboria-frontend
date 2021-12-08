@@ -1,1 +1,95 @@
-{"data":[{"id":1,"attributes":{"title":"stikers","price":"16","description":"travelling acmping stikers","createdAt":"2021-12-02T17:04:46.902Z","updatedAt":"2021-12-02T17:05:13.216Z","publishedAt":"2021-12-02T17:05:13.211Z"}},{"id":2,"attributes":{"title":"camping stikers","price":"16","description":"camping stikers","createdAt":"2021-12-02T17:05:51.231Z","updatedAt":"2021-12-02T17:09:13.393Z","publishedAt":"2021-12-02T17:09:13.389Z"}}],"meta":{"pagination":{"page":1,"pageSize":25,"pageCount":1,"total":2}}}
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "title": "stikers",
+        "price": "16",
+        "description": "travelling acmping stikers",
+        "createdAt": "2021-12-02T17:04:46.902Z",
+        "updatedAt": "2021-12-02T17:05:13.216Z",
+        "publishedAt": "2021-12-02T17:05:13.211Z"
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "title": "camping stikers",
+        "price": "16",
+        "description": "camping stikers",
+        "createdAt": "2021-12-02T17:05:51.231Z",
+        "updatedAt": "2021-12-02T17:09:13.393Z",
+        "publishedAt": "2021-12-02T17:09:13.389Z"
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "title": "camping stikers",
+        "price": "16",
+        "description": "camping stikers",
+        "createdAt": "2021-12-02T17:05:51.231Z",
+        "updatedAt": "2021-12-02T17:09:13.393Z",
+        "publishedAt": "2021-12-02T17:09:13.389Z"
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "title": "camping stikers",
+        "price": "16",
+        "description": "camping stikers",
+        "createdAt": "2021-12-02T17:05:51.231Z",
+        "updatedAt": "2021-12-02T17:09:13.393Z",
+        "publishedAt": "2021-12-02T17:09:13.389Z"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "title": "camping stikers",
+        "price": "16",
+        "description": "camping stikers",
+        "createdAt": "2021-12-02T17:05:51.231Z",
+        "updatedAt": "2021-12-02T17:09:13.393Z",
+        "publishedAt": "2021-12-02T17:09:13.389Z"
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "title": "camping stikers",
+        "price": "16",
+        "description": "camping stikers",
+        "createdAt": "2021-12-02T17:05:51.231Z",
+        "updatedAt": "2021-12-02T17:09:13.393Z",
+        "publishedAt": "2021-12-02T17:09:13.389Z"
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "title": "camping stikers",
+        "price": "16",
+        "description": "camping stikers",
+        "createdAt": "2021-12-02T17:05:51.231Z",
+        "updatedAt": "2021-12-02T17:09:13.393Z",
+        "publishedAt": "2021-12-02T17:09:13.389Z"
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "title": "camping stikers",
+        "price": "16",
+        "description": "camping stikers",
+        "createdAt": "2021-12-02T17:05:51.231Z",
+        "updatedAt": "2021-12-02T17:09:13.393Z",
+        "publishedAt": "2021-12-02T17:09:13.389Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": { "page": 1, "pageSize": 25, "pageCount": 1, "total": 2 }
+  }
+}
