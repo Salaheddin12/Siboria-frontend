@@ -10,17 +10,12 @@ import {
   Link,
   Popover,
   PopoverTrigger,
-  PopoverContent,
+  Container,
   useColorModeValue,
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function Navigation() {
   const { isOpen, onToggle } = useDisclosure();
@@ -35,72 +30,77 @@ export default function Navigation() {
       w="100%"
       bgColor={"white"}
     >
-      <Flex
-        bg={useColorModeValue("white", "gray.800")}
-        color={useColorModeValue("gray.600", "white")}
-        py={{ base: 2 }}
-        borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
-      >
+      <Container maxW="container.lg">
         <Flex
-          flex={{ base: 1 }}
-          justify={{ base: "center", md: "start" }}
-          alignItems={"center"}
+          bg={useColorModeValue("white", "gray.800")}
+          color={useColorModeValue("gray.600", "white")}
+          py={{ base: 2 }}
+          borderBottom={1}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("gray.200", "gray.900")}
         >
-          <Link
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            variant={"brand"}
-            color={useColorModeValue("black", "white")}
-          >
-            Siboria.
-          </Link>
-
           <Flex
-            display={{ base: "none", md: "flex" }}
-            ml={10}
-            margin={"0 auto"}
+            flex={{ base: 1 }}
+            justify={{ base: "center", md: "start" }}
+            alignItems={"center"}
           >
-            <DesktopNav />
+            <Link
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              variant={"brand"}
+              color={useColorModeValue("black", "white")}
+            >
+              Siboria.
+            </Link>
+
+            <Flex
+              display={{ base: "none", md: "flex" }}
+              ml={10}
+              margin={"0 auto"}
+            >
+              <DesktopNav />
+            </Flex>
+          </Flex>
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={6}
+          >
+            <Button
+              display={{ base: "none", md: "inline-flex" }}
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              bg={"brand"}
+              href={"#"}
+              _hover={{
+                bg: "brand",
+              }}
+            >
+              Sign Up
+            </Button>
+          </Stack>
+          <Flex
+            flex={{ base: 1, md: "auto" }}
+            ml={{ base: -2 }}
+            display={{ base: "flex", md: "none" }}
+            justify={"flex-end"}
+          >
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
+              variant={"ghost"}
+              aria-label={"Toggle Navigation"}
+            />
           </Flex>
         </Flex>
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            display={{ base: "none", md: "inline-flex" }}
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            bg={"brand"}
-            href={"#"}
-            _hover={{
-              bg: "brand",
-            }}
-          >
-            Sign Up
-          </Button>
-        </Stack>
-        <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
-          justify={"flex-end"}
-        >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={"ghost"}
-            aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-      </Flex>
-
+      </Container>
       <Collapse in={isOpen} animateOpacity>
         <MobileNav />
       </Collapse>
