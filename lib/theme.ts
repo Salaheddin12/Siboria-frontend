@@ -29,5 +29,10 @@ const fonts = {
   body: "Inter",
 };
 
-const theme = extendTheme({ colors, components, fonts });
+const config = {
+  initialColorMode: "light",
+  useSystemColorMode: false,
+};
+
+const theme = extendTheme({ config, colors, components, fonts });
 export default theme;

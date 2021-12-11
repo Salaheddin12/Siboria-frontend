@@ -33,7 +33,7 @@ function ProductAddToCart(productProps: ProductProps) {
   return (
     <Flex p={50} w="full" alignItems="center" justifyContent="center">
       <Box
-        bg={useColorModeValue("white", "gray.800")}
+        bg={"white"}
         maxW="sm"
         minW={265}
         minH={274}
@@ -74,7 +74,7 @@ function ProductAddToCart(productProps: ProductProps) {
           </Flex>
 
           <Flex justifyContent="space-between" alignContent="center">
-            <Box fontSize="2xl" color={useColorModeValue("gray.800", "white")}>
+            <Box fontSize="2xl" color={"gray.800"}>
               <Box as="span" color={"gray.600"} fontSize="lg">
                 $
               </Box>

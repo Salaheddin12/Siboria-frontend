@@ -11,7 +11,6 @@ import {
   Popover,
   PopoverTrigger,
   Container,
-  useColorModeValue,
   useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
@@ -31,15 +30,11 @@ export default function Navigation() {
       bgColor={"white"}
       borderBottom={1}
       borderStyle={"solid"}
-      borderColor={useColorModeValue("gray.200", "gray.900")}
+      borderColor={"gray.200"}
       boxShadow={"0px -11px 100px -12px rgba(0,0,0,0.1)"}
     >
       <Container maxW="container.lg">
-        <Flex
-          bg={useColorModeValue("white", "gray.800")}
-          color={useColorModeValue("gray.600", "white")}
-          py={{ base: 2 }}
-        >
+        <Flex bg={"white"} color={"gray.600"} py={{ base: 2 }}>
           <Flex
             flex={{ base: 1 }}
             justify={{ base: "center", md: "start" }}
@@ -48,7 +43,7 @@ export default function Navigation() {
             <Link
               textAlign={useBreakpointValue({ base: "center", md: "left" })}
               variant={"brand"}
-              color={useColorModeValue("black", "white")}
+              color={"black"}
             >
               Siboria.
             </Link>
@@ -110,8 +105,8 @@ export default function Navigation() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue("gray.600", "gray.200");
-  const linkHoverColor = useColorModeValue("gray.800", "white");
+  const linkColor = "gray.600";
+  const linkHoverColor = "gray.800";
 
   return (
     <Stack direction={"row"} spacing={4}>
@@ -142,11 +137,7 @@ const DesktopNav = () => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
-      display={{ md: "none" }}
-    >
+    <Stack bg={"white"} p={4} display={{ md: "none" }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -168,10 +159,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           textDecoration: "none",
         }}
       >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
+        <Text fontWeight={600} color={"gray.600"}>
           {label}
         </Text>
         {children && (
@@ -191,7 +179,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           pl={4}
           borderLeft={1}
           borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
+          borderColor={"gray.200"}
           align={"start"}
         >
           {children &&
