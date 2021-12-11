@@ -1,11 +1,4 @@
-import {
-  Flex,
-  Box,
-  useColorModeValue,
-  Icon,
-  chakra,
-  Tooltip,
-} from "@chakra-ui/react";
+import { Flex, Box, Icon, chakra, Tooltip } from "@chakra-ui/react";
 import { FiShoppingCart } from "react-icons/fi";
 import styled from "@emotion/styled";
 import Image from "next/image";
