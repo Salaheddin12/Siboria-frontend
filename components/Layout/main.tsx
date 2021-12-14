@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import NavBar from "../Navbar";
-import styles from "../../styles/Home.module.css";
+import Footer from "../sections/Footer";
 import { Box, Container } from "@chakra-ui/react";
 
 declare interface AppProps {
@@ -29,6 +29,7 @@ const Main = (AppProps: AppProps) => {
       <Container maxW="container.lg">
         <NavBar />
         {AppProps.children}
+        <Footer />
       </Container>
     </Box>
   );
