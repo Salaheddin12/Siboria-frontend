@@ -25,7 +25,7 @@ interface CustomSliderProps {
 
 export default function SplitScreen() {
   return (
-    <Box>
+    <Box mb={32}>
       <Flex justifyContent={"flex-end"}>
         <chakra.div
           className="navigationPrevRef"
